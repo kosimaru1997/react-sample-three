@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { Route, Routes } from 'react-router';
 import './App.css';
-import { Home } from './Home';
+import { Home } from './threeElement/Home';
+
 
 export const App: FC = () => (
   <Routes>

@@ -1,10 +1,10 @@
 import { FC, Suspense, useRef } from 'react';
 import { useFrame, Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { Mesh } from 'three';
+import { BufferGeometry, Material, Mesh } from 'three';
 
-const Cube = () => {
-  const cube = useRef<Mesh>(null);
+const Cube: FC = () => {
+  const cube: React.RefObject<Mesh<BufferGeometry, Material | Material[]>> = useRef<Mesh>(null);
 
   useFrame(() => {
     cube.current!.rotation.x += 0.01;
@@ -19,7 +19,11 @@ const Cube = () => {
   );
 };
 
-const Scene = () => (
+// const Cloud = () => (
+//   <mesh></mesh>
+// )
+
+const Scene: FC = () => (
   <>
     <gridHelper />
     <axesHelper />
