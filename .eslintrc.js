@@ -36,6 +36,8 @@ module.exports = {
     root: true,
     "rules": {
       "@typescript-eslint/explicit-module-boundary-types": "error",
+      "import/no-default-export": "off",
+      "import/prefer-default-export": "off",
       "react/function-component-definition": [
         2,
         {
