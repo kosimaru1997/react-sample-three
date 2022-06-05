@@ -1,8 +1,8 @@
 import { FC, Suspense } from "react";
-import { Sphere } from "./Sphere";
+import { ThreeHome } from "../threeElement/ThreeHome";
 
 export const Home: FC = () => (
   <Suspense>
-    <Sphere />
+    <ThreeHome />
   </Suspense>
 )
