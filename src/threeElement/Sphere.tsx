@@ -35,7 +35,7 @@ export const Sphere = (): JSX.Element => {
   }, [sphereRef.current]);
 
   return (
-    <mesh position={[-2, 2, 1]} castShadow ref={sphereRef}>
+    <mesh position={[-2, 2, 0]} castShadow ref={sphereRef}>
       <sphereGeometry args={[0.5, 32, 32]} />
       <meshStandardMaterial color="white" metalness={0.6} roughness={0.2} />
     </mesh>
