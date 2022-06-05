@@ -1,8 +1,12 @@
-import { FC, Suspense } from "react";
-import { ThreeHome } from "../threeElement/ThreeHome";
+import { FC, Suspense } from 'react';
+import { homeText } from '../css/Home.css';
+import { ThreeHome } from '../threeElement/ThreeHome';
 
 export const Home: FC = () => (
-  <Suspense>
-    <ThreeHome />
-  </Suspense>
-)
+  <>
+    <h2 className={homeText}>MyPortFolio(Kosimaru1997)</h2>
+    <Suspense>
+      <ThreeHome />
+    </Suspense>
+  </>
+);
