@@ -40,8 +40,7 @@ const SmallSphere: FC<{ x: number; y: number; z: number }> = ({
 
       timeline.play();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sphereRef.current]);
+  }, [x, y, z]);
 
   return (
     <mesh position={[-3, 5, -4]} castShadow ref={sphereRef}>

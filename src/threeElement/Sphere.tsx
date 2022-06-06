@@ -31,8 +31,7 @@ export const Sphere = (): JSX.Element => {
 
       timeline.play();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sphereRef.current]);
+  }, []);
 
   return (
     <mesh position={[-2, 2, 0]} castShadow ref={sphereRef}>
